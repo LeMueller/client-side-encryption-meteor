@@ -1,0 +1,18 @@
+<head>
+  <title>clientsideencryption</title>
+</head>
+
+<body>
+  {{>test}}
+</body>
+
+<template name="test">
+  <h1>Test Results </h1>
+  <ul>
+    {{#each tests}}
+      <li>{{data}}</li>
+    {{else}}
+      <li><em>Nothing to display</em></li>
+    {{/each}}
+  </ul>
+</template>
